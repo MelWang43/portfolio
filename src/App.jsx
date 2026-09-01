@@ -9,6 +9,13 @@ function App() {
   function handleLinkButtonClick(url){
     window.open(url);
   }
+
+  const tempProject = {id: 0, 
+    name: "Checklist App", 
+    description: "A simple checklist app built with React. Users can add, edit, and delete tasks, as well as mark them as complete. The app also features a dark mode toggle and local storage to save tasks between sessions.", 
+    image: "../public/Project_Checklist.png", 
+    githubUrl: "https://github.com/MelWang43/React-Checklist-App",
+    tags: ["React", "JavaScript", "CSS", "HTML"] }
   return (
     <>
       <header className="navbar">
@@ -24,22 +31,27 @@ function App() {
           <button onClick={() => handleLinkButtonClick("mailto:mel.wang.050202@gmail.com")}><Mail size={24}/></button>
         </div>
 
-        <p><MapPin/>Melbourne, Victoria, Australia</p>
+        <p><MapPin/>Melbourne, Australia</p>
 
         <button onClick={() => handleLinkButtonClick("https://drive.google.com/file/d/1AyyJrQgY_cpAKAsL-gauQ9I5p66n_1nK/view?usp=sharing")}><FileText/>Resume</button>
         <button><Phone/>Contact Me</button>
       </section>
 
       <section className="projects">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
+        <div className="projects-grid">
+          <Project project={tempProject}/>
+          <Project project={tempProject}/>
+          <Project project={tempProject}/>
+          <Project project={tempProject}/>
+        </div>
       </section>
       <section className="skills">
-        <h2>Skills</h2>
+        <h1>Skills</h1>
       </section>
       <section className="contact">
-        <h2>Contact Me</h2>
+        <h1>Contact Me</h1>
       </section>
-
       
     </>
   )
