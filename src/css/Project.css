@@ -7,7 +7,7 @@
     overflow: hidden;
     max-width: 100%;
     background-color: var(--project-bg);
-    background: linear-gradient(180deg, var(--project-bg-lighter) 15%, var(--project-bg) 100%);
+    background: linear-gradient(180deg, var(--project-bg-lighter) 15%, var(--project-bg) 95%, var(--project-bg-lighter) 100%);
     transition: all 0.2s ease-in-out;
 }
 
@@ -46,12 +46,13 @@
     background-color: transparent;
     color: var(--text-bright);
     transition: all 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 5px 15px -5px;
 }
 
 .project-card:hover .project-tag{
     /* color: var(--text); */
     border-color: var(--text-bright);
-    box-shadow: var(--shadow), 0 0 10px var(--accent-bright);
+    box-shadow:  var(--accent-bright) 0 1px 10px;
 }
 
 .project-button-overlay{

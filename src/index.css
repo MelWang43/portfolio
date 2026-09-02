@@ -9,10 +9,11 @@
   --project-bg: #252525;
   --project-bg-lighter: #444444;
   --accent-bright: rgb(80, 123, 255);
-  --accent: rgba(41, 91, 242, 1);
+  --accent: rgb(50, 85, 190);
   --accent-bg: rgb(20, 27, 51);
   --accent-border: rgba(119, 166, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --social-bg: rgba(143, 143, 143, 0.5);
+  --social-bg-lighter: rgba(151, 151, 151, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.8) 0 25px 25px -5px, rgba(0, 0, 0, 0.6) 0 4px 6px -2px;
 
@@ -36,6 +37,10 @@
   }
 }
 
+button:active{
+  transition: scale 0.1s ease-in-out;
+  scale: 0.9;
+}
 .btn-accent{
   background-color: var(--accent);
   color: var(--text);
@@ -61,5 +66,21 @@
 
 .btn-accent:active{
   transform: translateY(2px);
-  box-shadow: var(--shadow), 0 0 10px var(--accent-bright);
+  
+}
+
+.btn-social{
+  background-color: var(--social-bg);
+  color: var(--text);
+  border: 2px solid var(--accent-border);
+  padding: 0.5rem 0.5rem;
+  border-radius: 2rem;
+
+  transition: all 0.2s ease;
+}
+
+.btn-social:hover{
+  color: var(--accent-bright);
+  background-color: var(--social-bg-lighter);
+  filter: brightness(1.2);
 }
