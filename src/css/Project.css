@@ -8,7 +8,14 @@
     max-width: 100%;
     background-color: var(--project-bg);
     background: linear-gradient(180deg, var(--project-bg-lighter) 15%, var(--project-bg) 95%, var(--project-bg-lighter) 100%);
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.project-card.not-loaded{
+    transform: scale(0);
+    opacity: 0;
 }
 
 .project-card p {
@@ -36,7 +43,7 @@
     width: 100%;
     /* max-width: 450px; */
     height: auto;
-    min-height: 200px;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -55,6 +62,7 @@
     color: var(--text-bright);
     transition: all 0.2s ease;
     box-shadow: rgba(0, 0, 0, 0.8) 0 5px 15px -5px;
+    
 }
 
 .project-card:hover .project-tag{

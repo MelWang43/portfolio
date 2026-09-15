@@ -1,9 +1,11 @@
+
+
 :root {
   --text: #cfcfcf;
   --text-muted: #979797;
   --text-h: #08060d;
   --text-bright: #7ec1ff;
-  --bg: #091833;
+  --bg: #0b1018;
   --bg-lighter: #090f1d;
   --border: #e5e4e7;
   --project-bg: #252525;
@@ -25,11 +27,12 @@
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
+  font-family: 'Lato', sans-serif;
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
-  background: linear-gradient(0deg, var(--bg-lighter) 0%, var(--bg) 100%);
+  background: linear-gradient(277deg,rgb(45, 62, 116) 0%, rgb(18, 33, 77) 6%, rgb(3, 4, 8) 40%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -39,6 +42,11 @@
     font-size: 16px;
   }
 
+  margin: 0;
+}
+
+
+body{
   margin: 0;
 }
 button{
