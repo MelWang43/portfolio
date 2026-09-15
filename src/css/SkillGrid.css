@@ -1,0 +1,67 @@
+.skill-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	gap: 0.75rem;
+	width: 100%;
+	max-width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-tag {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    user-select: none;
+	gap: 0.5rem;
+	color: var(--text);
+    background-color: var(--accent-bg);
+    border: 2px solid var(--accent-muted);
+
+    padding: 0.2rem;
+    border-radius: 2rem;
+    transition: all 0.2s ease;
+    opacity: 0;
+    transform: scale(0.65);
+    transition: all 0.35s ease;
+
+}
+
+.skill-tag.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: var(--skill-delay);
+}
+
+.skill-tag:hover{
+    transition-delay: 0;
+    color: var(--text-bright);
+    background-color: var(--accent-muted);
+    border: 2px solid var(--accent-bright);
+    box-shadow: var(--accent-bright) 0 1px 10px;
+    transform: scale(1.5);
+    transform: translateY(-3px);
+}
+
+.skill-tag svg {
+	font-size: 1.5rem;
+}
+
+.skill-react svg { color: #61dafb; }
+.skill-css svg { color: #1572b6; }
+.skill-javascript svg { color: #f7df1e; }
+.skill-csharp svg { color: #512bd4; }
+.skill-java svg { color: #f89820; }
+.skill-node svg { color: #339933; }
+.skill-sql svg { color: #4479a1; }
+.skill-c svg { color: #659ad2; }
+.skill-python svg { color: #3776ab; }
+.skill-unity svg { color: #ffffff; }
+
+@media (prefers-reduced-motion: reduce) {
+    .skill-tag,
+    .skill-tag.is-visible {
+        transition: none;
+        transform: none;
+    }
+}

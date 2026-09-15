@@ -3,17 +3,20 @@
   --text-muted: #979797;
   --text-h: #08060d;
   --text-bright: #7ec1ff;
-  --bg: #0f1a2b;
-  --bg-lighter: #132a57;
+  --bg: #091833;
+  --bg-lighter: #090f1d;
   --border: #e5e4e7;
   --project-bg: #252525;
   --project-bg-lighter: #444444;
   --accent-bright: rgb(80, 123, 255);
   --accent: rgb(50, 85, 190);
+  --accent-muted: rgba(54, 71, 124, 0.6);
+  --accent-dark: rgba(23, 40, 90, 0.5);
   --accent-bg: rgb(20, 27, 51);
   --accent-border: rgba(119, 166, 255, 0.5);
-  --social-bg: rgba(143, 143, 143, 0.5);
-  --social-bg-lighter: rgba(151, 151, 151, 0.5);
+  --social-bg: rgba(143, 143, 143, 0.2);
+  --social-bg-lighter: rgba(151, 151, 151, 0.3);
+  --nav-bg: rgba(41, 40, 40, 0.8);
   --shadow:
     rgba(0, 0, 0, 0.8) 0 25px 25px -5px, rgba(0, 0, 0, 0.6) 0 4px 6px -2px;
 
@@ -35,8 +38,13 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
-}
 
+  margin: 0;
+}
+button{
+  font-family: var(--sans);
+  font-size: 0.9rem;
+}
 button:active{
   transition: scale 0.1s ease-in-out;
   scale: 0.9;
@@ -73,8 +81,8 @@ button:active{
   background-color: var(--social-bg);
   color: var(--text);
   border: 2px solid var(--accent-border);
-  padding: 0.5rem 0.5rem;
-  border-radius: 2rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 1rem;
 
   transition: all 0.2s ease;
 }
@@ -83,4 +91,5 @@ button:active{
   color: var(--accent-bright);
   background-color: var(--social-bg-lighter);
   filter: brightness(1.2);
+  transform: translateY(-2px);
 }
