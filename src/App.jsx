@@ -6,6 +6,7 @@ import {FaGithub, FaLinkedin} from "react-icons/fa"
 import {FileText, Mail, MapPin, ArrowRight} from 'lucide-react'
 import SkillGrid from './components/SkillGrid.jsx'
 import projects from './resources/projects.json'
+import './css/tooltip.css'
 
 function App() {
   
@@ -52,12 +53,13 @@ function App() {
         <p style={{margin: '1.6rem 0', fontSize: '1rem'}}>{bio}</p>
         
         <div className="contact-buttons">
-          <button className="btn-social" onClick={() => handleLinkButtonClick("https://github.com/MelWang43")}><FaGithub size={24}/></button>
-          <button className="btn-social" onClick={() => handleLinkButtonClick("https://www.linkedin.com/in/mel-wang-b0aa30322/")}><FaLinkedin size={24}/></button>
-          <button className="btn-social" onClick={() => handleLinkButtonClick("mailto:mel.wang.050202@gmail.com")}><Mail size={24}/></button>
+          <button className="btn-social tooltip" onClick={() => handleLinkButtonClick("https://github.com/MelWang43")}><FaGithub size={24}/><span className="tooltip-text">Github</span></button>
+          <button className="btn-social tooltip" onClick={() => handleLinkButtonClick("https://www.linkedin.com/in/mel-wang-b0aa30322/")}><FaLinkedin size={24}/><span className="tooltip-text">LinkedIn</span></button>
+          <button className="btn-social tooltip" onClick={() => handleLinkButtonClick("mailto:mel.wang.050202@gmail.com")}><Mail size={24}/><span className="tooltip-text">Email Me</span></button>
+          <button className="btn-social tooltip" onClick={() => handleLinkButtonClick("https://drive.google.com/file/d/1AyyJrQgY_cpAKAsL-gauQ9I5p66n_1nK/view?usp=sharing")}><FileText size={24}/><span className="tooltip-text">Resume</span></button>
         </div>
         <div className="contact-buttons">
-          <button className="btn-accent" onClick={() => handleLinkButtonClick("https://drive.google.com/file/d/1AyyJrQgY_cpAKAsL-gauQ9I5p66n_1nK/view?usp=sharing")}><FileText/>Resume</button>
+          {/* <button className="btn-accent" onClick={() => handleLinkButtonClick("https://drive.google.com/file/d/1AyyJrQgY_cpAKAsL-gauQ9I5p66n_1nK/view?usp=sharing")}><FileText/>Resume</button> */}
           <button className="btn-accent" onClick={() => ScrollTo('contact')}><ArrowRight/>Contact Me</button>
         </div>
       </div>
