@@ -11,7 +11,7 @@
 
     {
         "id": 1,
-        "name": "Basic Checklist App", 
+        "name": "Basic React Checklist App", 
         "description": "A simple checklist app built with React. Users can add, edit, and delete tasks, as well as mark them as complete. The app also features local storage to save tasks between sessions.", 
         "image": "../Project_Checklist.png", 
         "demoURL": "",
