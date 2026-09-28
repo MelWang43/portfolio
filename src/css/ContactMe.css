@@ -5,7 +5,7 @@
     padding: 0.8rem;
     border-radius: 1.2rem;
     border: 2px solid var(--accent-bright);
-    background-color: var(--accent-dark);
+    background-color: var(--accent-bg);
     
 }
 
@@ -14,7 +14,7 @@
     padding: 0.8rem;
     border-radius: 1.2rem;
     border: 2px solid var(--accent-bright);
-    background-color: var(--accent-dark);
+    background-color: var(--accent-bg);
     resize: none;
     width: 95%;
     min-height: 200px;
@@ -24,10 +24,18 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-
+    color: var(--text-muted);
     background-color: var(--accent-dark);
+    backdrop-filter: blur(10px);
     border-radius: 1.5rem;
     padding: 1.5rem;
+    border: 1px solid transparent;
+
+    transition: all 0.2s ease;
+}
+
+.contact-text-container:hover{
+    border-color: var(--accent-bright);
 }
 
 .contact-header-inputs{
@@ -38,4 +46,11 @@
 .contact-header-inputs input{
     /* flex: 1; */
     width: 40%;
+}
+
+.copiable-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }

@@ -2,8 +2,8 @@
     
     {
         "id": 0,
-        "name": "Running App", 
-        "description": "This project is a local-first web application for tracking workouts, setting performance goals, and visualizing running activity using interactive charts and persistent storage.", 
+        "name": "Run Fitness Tracker", 
+        "description": "This project is a simple front-end app, made with React, for tracking workouts, setting performance goals, and visualizing running activity using interactive charts", 
         "image": "../running_app.png", 
         "githubUrl": "https://github.com/MelWang43/React-Running-App",
         "tags": ["React", "JavaScript", "CSS"] 
@@ -11,9 +11,10 @@
 
     {
         "id": 1,
-        "name": "Checklist App", 
+        "name": "Basic Checklist App", 
         "description": "A simple checklist app built with React. Users can add, edit, and delete tasks, as well as mark them as complete. The app also features local storage to save tasks between sessions.", 
         "image": "../Project_Checklist.png", 
+        "demoURL": "",
         "githubUrl": "https://github.com/MelWang43/React-Checklist-App",
         "tags": ["React", "JavaScript", "CSS"] 
     }

@@ -1,7 +1,7 @@
 .project-card{
     position: relative;
     border-radius: 2rem;
-    border: 2px transparent var(--text-muted);
+    border: 1px solid var(--text-muted);
     box-shadow: var(--shadow);
 
     overflow: hidden;

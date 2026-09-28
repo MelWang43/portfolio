@@ -11,6 +11,9 @@
     /* background: linear-gradient(180deg, var(--accent-dark) 0%, rgba(0, 0, 0, 0) 100%); */
     background: var(--bg-navbar);
     border-bottom: 2px solid var(--project-bg);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-btn-container{
@@ -75,6 +78,7 @@ section h1{
     text-align: left;
     padding-top: 5rem;
     user-select: none;
+    margin-top: 5%;
     
 }
 
@@ -112,13 +116,14 @@ section h1{
 
 footer{
     position: inherit;
-    margin-top: 2rem;
+    margin-top: 6rem;
     border-top: 2px solid var(--accent);
     background: var(--bg);
-    min-height: 20px;
+    min-height: 60px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: top;
+    justify-content: center;
+    color: var(--text-muted);
     
     padding: 0.5rem;
 }

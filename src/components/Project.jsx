@@ -31,11 +31,11 @@ function Project({project, index}){
                 <img src={project.image} alt={`${project.name} Image`} className="project-image"></img>
                 
                 <div className="project-button-overlay">
-                    <button className="btn-accent" onClick={() => handleLinkButtonClick(project.liveUrl)}>
-                        <Radio /> View Live
-                    </button>
+                    {!project.demoURL ? <></> : <button className="btn-accent" onClick={() => handleLinkButtonClick(project.demoURL)}>
+                        <Radio /> View Demo
+                    </button>}
                     <button className="btn-accent" onClick={() => handleLinkButtonClick(project.githubUrl)}>
-                        <FaGithub size={24} />
+                        <FaGithub size={24} /> Code
                     </button>
                 </div>
 
